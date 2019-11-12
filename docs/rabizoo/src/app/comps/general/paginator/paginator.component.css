@@ -1,0 +1,8 @@
+img{width: 10vw;}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+    margin: auto;
+}

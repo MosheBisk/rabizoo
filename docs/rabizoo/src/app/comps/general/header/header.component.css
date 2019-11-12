@@ -1,0 +1,17 @@
+.header-bg{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    align-items: center;
+}
+
+.logo{
+    width: 25%;
+    
+}
+.logo>img{width: 50%;}
+
+app-navigation{
+    display: block;
+    width: 50%;
+}

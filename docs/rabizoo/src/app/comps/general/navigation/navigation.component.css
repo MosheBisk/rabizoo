@@ -1,0 +1,10 @@
+.nav-ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
