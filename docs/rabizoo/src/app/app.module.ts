@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from "@angular/common/http"
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './comps/general/header/header.component';
@@ -28,7 +30,7 @@ import { BirdCardComponent } from './comps/cards/bird-card/bird-card.component';
     BirdCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

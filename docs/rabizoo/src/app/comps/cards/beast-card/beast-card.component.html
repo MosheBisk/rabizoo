@@ -1,1 +1,8 @@
-<div>Beast card</div>
+<div>
+    <h3>{{ beastsSvc.currentBeast.name }}</h3>
+    <div>size: {{ beastsSvc.currentBeast.weight }}</div>
+    <div>lifeSpan: {{ beastsSvc.currentBeast.lifespan }}</div>
+    <div>habitat: {{ beastsSvc.currentBeast.herd }}</div>
+    <div>habitat: {{ beastsSvc.currentBeast.isYammi }}</div>
+    <img [src]="beastsSvc.currentBeast.src"/>
+</div>

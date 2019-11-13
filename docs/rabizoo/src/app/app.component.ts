@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PagingService } from './services/paging.service';
 import { BirdsService } from './services/birds.service';
+import { BeastsService } from './services/beasts.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { BirdsService } from './services/birds.service';
 export class AppComponent {
   title = 'rabizoo';
 
-constructor(public paging:PagingService, public birds:BirdsService){}
+constructor(public paging:PagingService, public birds:BirdsService, public beasts:BeastsService){}
 
 getUp(ev){
   console.log('AppComponent  getUp', ev);
@@ -23,7 +24,13 @@ getUp(ev){
         this.birds.currentBirdIndex = newBirdIndex
         this.birds.currentBird = this.birds.birds[newBirdIndex]
       break;
-  
+    case 'beasts':
+        let newBeastIndex = this.getNewCurrentIndex(
+          this.beasts.currentBeastIndex, ev, this.beasts.beasts
+        )
+        this.beasts.currentBeastIndex = newBeastIndex;
+        this.beasts.currentBeast = this.beasts.beasts[newBeastIndex];
+      break;
     default:
       break;
   }

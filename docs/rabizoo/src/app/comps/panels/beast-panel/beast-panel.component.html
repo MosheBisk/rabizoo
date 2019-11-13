@@ -1,1 +1,15 @@
-<div>Beast panel</div>
+<h1>Welcome to the beasts barn</h1>
+
+<div class="flex">
+    <div>
+        <h2>our beasts list</h2>
+        <ul>
+            <li *ngFor="let b of beastsSvc.beasts"> {{ b.name }} </li>
+        </ul>
+    </div>
+
+
+    <div *ngIf="beastsSvc.currentBeast">
+        <app-beast-card></app-beast-card>
+    </div>
+</div>

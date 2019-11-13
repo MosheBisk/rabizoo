@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BeastsService } from 'src/app/services/beasts.service';
 
 @Component({
   selector: 'app-beast-card',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BeastCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public beastsSvc:BeastsService) { }
 
   ngOnInit() {
   }
