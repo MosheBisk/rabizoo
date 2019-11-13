@@ -1,12 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
-})
-export class FishModule { }
+export class Fish {
+  name:string
+  whghit:string
+  kosher:boolean
+  predator:boolean
+ }

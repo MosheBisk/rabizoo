@@ -1,0 +1,5 @@
+[
+    {"name":"Yellowfin tuna", "whghit":"450kg", "kosher":"true", "predator":"false", "src":"https://www.afma.gov.au/sites/default/files/styles/portfolio_feature_image/public/yellowfin_tuna_123rf_image_23572617_m_-_all_media_unlimited_time.jpg?itok=pgpkw-Od"},
+    {"name":"Tiger shark", "whghit":"635kg", "kosher":"false", "predator":"true", "src":"https://upload.wikimedia.org/wikipedia/commons/3/39/Tiger_shark.jpg"},
+    {"name":"Salmon", "whghit":"46kg", "kosher":"true", "predator":"false", "src":"https://cdn.britannica.com/50/117550-050-874E841A/Atlantic-salmon.jpg"}
+]
